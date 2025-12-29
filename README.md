@@ -1,6 +1,6 @@
-# Network Guard – Network Security Monitor
+# SVT – System Visibility & Threats
 
-**Advanced Real-Time Network Security Scanner**  
+**Advanced Real-Time System Visibility & Threats**  
 A comprehensive network monitoring tool designed to detect, analyze, and block malicious network activity in real time.
 
 ⚠️ **Use only on systems you own or are explicitly authorized to monitor.**
@@ -23,7 +23,7 @@ A comprehensive network monitoring tool designed to detect, analyze, and block m
 
 ## Overview
 
-**Network Guard** is a real-time network security monitoring application that continuously scans active network connections to identify and mitigate potential threats.
+**System Visibility & Threats** is a real-time network security monitoring application that continuously scans active network connections to identify and mitigate potential threats.
 
 It combines multiple detection and analysis techniques, including:
 
@@ -151,4 +151,4 @@ VIRUSTOTAL_API_KEYS = [
 - Comply with privacy laws
 - Secure your API keys
 
-⚠️ **Unauthorized monitoring may be illegal.**
+⚠️ **Unauthorized monitoring may be illegal.** (maybe)
