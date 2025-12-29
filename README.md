@@ -91,3 +91,23 @@ This multi-layered approach provides enhanced visibility and proactive protectio
 git clone https://github.com/yourusername/network-guard.git
 cd network-guard
 ```
+
+## Usage
+- **Main Dashboard** — Live network map and connection monitor
+- **Traffic Analytics** — Network statistics and visual graphs
+- **Blocking Controls** — Block processes, IPs, and websites
+- **Advanced Control** — Firewall rules and event logs
+
+## Configuration
+Obtain free API keys from:
+[virustotal](https://www.virustotal.com/)
+Edit ##settings.py:
+
+```python
+VIRUSTOTAL_API_KEYS = [
+    "your_api_key_1",
+    "your_api_key_2",
+    "your_api_key_3"
+]
+```
+Using multiple API keys helps avoid rate limits.
