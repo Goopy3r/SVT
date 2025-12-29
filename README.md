@@ -68,8 +68,8 @@ This multi-layered approach provides enhanced visibility and proactive protectio
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/network-guard.git
-cd network-guard
+git clone https://github.com/Goopy3r/SVT
+cd SVT
 ```
 
 ### Install Dependencies
