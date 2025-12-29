@@ -37,42 +37,24 @@ This multi-layered approach provides enhanced visibility and proactive protectio
 
 ## Key Features
 
-- **Real-Time Network Monitoring**  
-  Continuously scans all active inbound and outbound connections.
-
-- **Intelligent Threat Detection**  
-  Multi-layer risk scoring using VirusTotal reputation data, geolocation risk, and port analysis.
-
-- **Automated Blocking**  
-  Automatically blocks high-risk connections based on configurable thresholds.
-
-- **Visual Dashboard**  
-  Interactive world map with color-coded risk indicators.
-
-- **Multi-Layer Blocking**  
-  Block malicious activity by:
-  - Process
-  - IP address
-  - Domain / website
-
-- **Comprehensive Analytics**  
-  Detailed traffic statistics, logs, and historical analysis.
-
-- **Firewall Integration**  
-  Automatic firewall rule creation when supported by the OS.
-
-- **Cross-Platform Support**  
-  Works on Windows, macOS, and Linux.
+- **Real-Time Network Monitoring** — Continuous scanning of active connections  
+- **Intelligent Threat Detection** — Multi-layer risk scoring  
+- **Automated Blocking** — Configurable auto-blocking of high-risk traffic  
+- **Visual Dashboard** — Interactive world map with risk indicators  
+- **Multi-Layer Blocking** — Process, IP, and domain blocking  
+- **Comprehensive Analytics** — Detailed traffic statistics and logs  
+- **Firewall Integration** — Automatic firewall rule creation  
+- **Cross-Platform Support** — Windows, macOS, and Linux  
 
 ---
 
 ## Supported Operating Systems
 
-| Operating System | Version              | Feature Support       | Notes |
-|------------------|----------------------|-----------------------|-------|
-| **Windows**      | 7, 8, 10, 11          | Full support          | Administrator privileges required for blocking |
-| **macOS**        | 10.13+               | Most features         | Limited firewall integration |
-| **Linux**        | Ubuntu 18.04+, Debian 10+, Fedora 32+ | Most features | Root required for some actions |
+| OS | Version | Feature Support | Notes |
+|----|--------|-----------------|-------|
+| **Windows** | 7, 8, 10, 11 | Full support | Admin required |
+| **macOS** | 10.13+ | Most features | Limited firewall |
+| **Linux** | Ubuntu 18.04+, Debian 10+, Fedora 32+ | Most features | Root required |
 
 ---
 
@@ -80,34 +62,93 @@ This multi-layered approach provides enhanced visibility and proactive protectio
 
 ### Prerequisites
 
-- **Python 3.8 or newer**
-- Active internet connection (VirusTotal + IP geolocation services)
+- Python 3.8+
+- Active internet connection
 
----
-
-### Step 1: Clone or Download
+### Clone Repository
 
 ```bash
 git clone https://github.com/yourusername/network-guard.git
 cd network-guard
 ```
 
+### Install Dependencies
+
+```bash
+pip install psutil requests
+pip install matplotlib numpy cartopy
+```
+
+### Run
+
+```bash
+python main.py
+```
+
+---
+
 ## Usage
-- **Main Dashboard** — Live network map and connection monitor
-- **Traffic Analytics** — Network statistics and visual graphs
-- **Blocking Controls** — Block processes, IPs, and websites
-- **Advanced Control** — Firewall rules and event logs
+
+- Live dashboard monitoring
+- Traffic analytics and graphs
+- Blocking controls for IPs, domains, and processes
+- Firewall and log management
+
+---
 
 ## Configuration
-Obtain free API keys from:
-[virustotal](https://www.virustotal.com/)
-Edit settings.py:
+
+### VirusTotal API Keys
+
+Edit `settings.py`:
 
 ```python
 VIRUSTOTAL_API_KEYS = [
     "your_api_key_1",
-    "your_api_key_2",
-    "your_api_key_3"
+    "your_api_key_2"
 ]
 ```
-Using multiple API keys helps avoid rate limits.
+
+### Custom Settings
+
+- KNOWN_SAFE
+- SUSPICIOUS_PORTS
+- COUNTRY_RISKS
+- RISK_WEIGHTS
+
+---
+
+## OS-Specific Notes
+
+### Windows
+- Requires Administrator privileges
+- Firewall and hosts file integration
+
+### macOS
+- Gatekeeper warnings possible
+- Limited firewall control
+
+### Linux
+- Root privileges required
+- SELinux/AppArmor may require adjustments
+
+---
+
+## Troubleshooting
+
+| Issue | Solution |
+|------|----------|
+| Missing modules | `pip install psutil requests` |
+| Permission denied | Run as admin/root |
+| API limit reached | Use multiple keys |
+| Map not loading | Install `cartopy` |
+
+---
+
+## Important Notes & Legal
+
+- Authorization is required
+- Comply with privacy laws
+- Secure your API keys
+
+⚠️ **Unauthorized monitoring may be illegal.**
