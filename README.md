@@ -3,7 +3,7 @@
 **Advanced Real-Time System Visibility & Threats**  
 A comprehensive network monitoring tool designed to detect, analyze, and block malicious network activity in real time.
 
-⚠️ **Use only on systems you own or are explicitly authorized to monitor.**
+⚠️ **Use only on systems you own or are explicitly authorized to monitor**
 
 ---
 
