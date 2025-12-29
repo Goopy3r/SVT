@@ -101,7 +101,7 @@ cd network-guard
 ## Configuration
 Obtain free API keys from:
 [virustotal](https://www.virustotal.com/)
-Edit ##settings.py:
+Edit settings.py:
 
 ```python
 VIRUSTOTAL_API_KEYS = [
